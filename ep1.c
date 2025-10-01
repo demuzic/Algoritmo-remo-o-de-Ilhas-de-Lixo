@@ -110,7 +110,7 @@ void busca_ilha(int index, int id_ilha_atual) {
 }
 
 
-void encontrar_ilhas() { //isso aqui faz uma varredura da array matriz_sub_ilhas para encontrar novos pontos de inicio de ilhas verificando se aql ponto ja foi visitado
+void encontrar_ilhas() { //Varredura de ilhas visitadas
     for (int i = 0; i < linhas_matriz * colunas_matriz; i++) {
         
         if (matriz_sub_ilhas[i] > 0 && !visitados[i]) {
@@ -208,3 +208,4 @@ void liberar_memoria() {
         free(profundidades);
     }
 }
+
